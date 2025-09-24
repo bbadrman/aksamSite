@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>
+			{% block title %}Aksam - assurances
+			{% endblock %}
+		</title>
+
+		<!-- Bootstrap Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+		<!-- Animate Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/animate.min.css') }}">
+		<!-- FontAwesome Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/fontawesome.min.css') }}">
+		<!-- FlatIcon CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/flaticon.css') }}">
+		<!-- Owl Carousel Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/owl.carousel.min.css') }}">
+		<!-- Slick Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/slick.min.css') }}">
+		<!-- MeanMenu CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/meanmenu.css') }}">
+		<!-- Magnific Popup Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/magnific-popup.min.css') }}">
+		<!-- Odometer Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/odometer.min.css') }}">
+		<!-- Nice Select Min CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/nice-select.min.css') }}">
+		<!-- Style CSS -->
+		<link
+		rel="stylesheet" href="{{ asset('/css/style.css') }}">
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
+		<link rel="icon" type="image/png" href="{{ asset('/img/favicon.png') }}"> {% block stylesheets %}{% endblock %}
+
+
+		<!-- JavaScript Functions -->
+		 <script type="text/javascript">
+																														        function aksam1() {
+																														            document.getElementById("div-aksam1").style.display = "block";
+																														            document.getElementById("div-aksam2").style.display = "none";
+																														        }
+																														
+																														        function aksam2() {
+																														            document.getElementById("div-aksam2").style.display = "block";
+																														            document.getElementById("div-aksam1").style.display = "none";
+																														        }
+																														    </script>
+		</head>
+
+		<body>
+			<!-- Header -->
+			{% include 'includes/header.html.twig' %}
+
+			<!-- Modal -->
+			{% include 'includes/modal.html.twig' %}
+
+			<!-- Main Content -->
+			{% block body %}{% endblock %}
+
+			<!-- Footer -->
+			{% include 'includes/footer.html.twig' %}
+
+			<!-- Go Top Button -->
+			<div class="go-top">
+				<i class="fas fa-chevron-up"></i>
+				<i class="fas fa-chevron-up"></i>
+			</div>
+
+			<!-- JavaScript Files -->
+		<!-- jQuery Min JS -->
+			 <script src="{{ asset('/js/jquery.min.js') }}"></script>
+			<!-- Popper Min JS -->
+			 <script src="{{ asset('/js/popper.min.js') }}"></script>
+			<!-- Bootstrap Min JS -->
+			 <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+			<!-- Parallax Min JS -->
+			 <script src="{{ asset('/js/parallax.min.js') }}"></script>
+			<!-- Owl Carousel Min JS -->
+			 <script src="{{ asset('/js/owl.carousel.min.js') }}"></script>
+			<!-- Slick Min JS -->
+			 <script src="{{ asset('/js/slick.min.js') }}"></script>
+			<!-- MeanMenu JS -->
+			 <script src="{{ asset('/js/jquery.meanmenu.js') }}"></script>
+			<!-- Appear Min JS -->
+			 <script src="{{ asset('/js/jquery.appear.min.js') }}"></script>
+			<!-- Odometer Min JS -->
+			 <script src="{{ asset('/js/odometer.min.js') }}"></script>
+			<!-- Nice Select Min JS -->
+			 <script src="{{ asset('/js/jquery.nice-select.min.js') }}"></script>
+			<!-- Magnific Popup Min JS -->
+			 <script src="{{ asset('/js/jquery.magnific-popup.min.js') }}"></script>
+			<!-- WOW Min JS -->
+			 <script src="{{ asset('/js/wow.min.js') }}"></script>
+			<!-- AjaxChimp Min JS -->
+			 <script src="{{ asset('/js/jquery.ajaxchimp.min.js') }}"></script>
+			<!-- Form Validator Min JS -->
+			 <script src="{{ asset('/js/form-validator.min.js') }}"></script>
+			<!-- Contact Form Min JS -->
+			 <script src="{{ asset('/js/contact-form-script.js') }}"></script>
+			<!-- Main JS -->
+			 <script src="{{ asset('/js/main.js') }}"></script>
+			<!-- Select JS -->
+			 <script src="{{ asset('/js/selectjs.js') }}"></script>
+
+
+		</body>
+	</html>
